@@ -22,3 +22,37 @@ def tail(current,num):
 
 n=int(input("Enter the value of N: "))
 tail(1,n)
+
+
+
+                                      # 3. Head Recursion (Print N to 1)
+
+def head(current,num):
+  if current > num:
+    return
+
+  head(current+1,num)
+  print(current)
+
+n=int(input("Enter the value of N: "))
+head(1,n)
+
+
+
+
+                                              # 4. Tail Recursion (Print N to 1)
+
+
+
+def tail(num):
+  if num < 1:
+    return
+
+  print(num)
+  tail(num-1)
+
+n=int(input("Enter the value of N: "))
+tail(n)
+
+
+
